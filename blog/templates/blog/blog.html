@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block pageTitle %}{{blog_title|title}}{% endblock%}
+{% block pageStyle %}
+<link rel="stylesheet" href="../../static/blog/blog.css" />
+{% endblock %}
+{% block pageContent %}
+{% include "./includes/main-header.html" %}
+
+<section class="blog-info" >
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-lg-6">
+            <h2 class="blog-title" >{{blog_title}}</h2>
+        </div>
+        <div class="col-lg-6">
+            <div class="row justify-content-end">
+                <div class="col-lg-4">
+        <div class="img_container_2">
+            <img src="{{img_url}}" />
+        </div>
+        <div class="blog_info_others">
+        <small> By John Doe</small>
+        <small> Last Updated On <span> Oct 5,2022</span> </small>
+        </div>
+        </div>
+        </div>
+    </div>
+
+        
+    </div>
+</div>
+</section>
+
+
+<section class="blog-data" >
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-lg-12">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
+                </p>  
+        </div>
+
+        
+    </div>
+</div>
+</section>
+
+{% endblock pageContent %}

@@ -1,0 +1,95 @@
+header {
+    background: linear-gradient(to right, #9b59b6, #8e44ad) !important;
+    color: white;
+    height: 50vh !important;
+}
+
+nav {
+    background: linear-gradient(to right, #9b59b6, #8e44ad) !important;
+    color: white !important;
+}
+
+.header_content {
+    margin-top: 20px;
+}
+
+.header_content div {
+    margin-right: 20px;
+}
+
+.header_content div h2 {
+    font-size: 3rem;
+    /* width: 252px; */
+    word-break: break-all !important;
+}
+
+.blog-container {
+    transform: translate(0px, -40px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 2px #95a5a6;
+}
+
+.blog-container_2 {
+    padding: 20px;
+}
+
+.blog-container h6,
+.blog-container_2 h6 {
+    font-weight: bold;
+    margin-top: 25px;
+
+}
+
+.header_content-text {
+    margin-top: 20px;
+}
+
+.card {
+    margin-top: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    background-color: #9b59b6;
+    color: white;
+    cursor: pointer;
+}
+
+.card_body {
+    padding: 0px 20px;
+}
+
+.blog-info .container {
+    background: linear-gradient(to right, #9b59b6, #8e44ad) !important;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.blog-title {
+    color: white;
+    text-transform: capitalize;
+}
+
+.blog_info_others {
+    margin-top: 10px !important;
+    color: white !important;
+}
+
+.blog_info_other p {
+    color: white;
+}
+
+.blog_info_others span {
+    font-weight: bold;
+}
+
+.blog-data .container {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 2px #95a5a6;
+}

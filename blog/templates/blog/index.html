@@ -1,0 +1,82 @@
+{% extends 'base.html' %} 
+{% load static %}
+ {% block pageTitle %} Blog {% endblock %} 
+ {% block pageStyle %}
+<link rel="stylesheet" href="../../static/blog/blog.css" />
+{% endblock %}
+ {% block pageContent %} 
+ {% include "./includes/header.html" %} 
+     <section class="main-content">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8 col-md-10 col-12">
+            <div class="blog-container">
+              <h6 class="text-center">My Latest Thoughts</h6>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card">
+                    <a href="{% url 'blog-page' "nature-at-its-best" %}" 
+                     class="stretched-link">
+                    <div class="img-container-round">
+                      <img
+                        src="https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q="
+                      />
+                    </div>
+
+                    <h6 class="text-center">Nature at its best</h6>
+                    <div class="card_body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                </a>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="card">
+                    <a href="{% url 'blog-page' "mountain-hiking" %}" 
+                     class="stretched-link">
+                    <div class="img-container-round">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+                      />
+                    </div>
+
+                    <h6 class="text-center">Mountain Hiking</h6>
+                    <div class="card_body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="card">
+                    <a href="{% url 'blog-page' "programming-is-great" %}" 
+                    class="stretched-link">
+                    <div class="img-container-round">
+                      <img
+                        src="https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg"
+                      />
+                    </div>
+
+                    <h6 class="text-center">Programming is great!</h6>
+                    <div class="card_body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ {% endblock %}
